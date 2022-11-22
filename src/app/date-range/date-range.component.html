@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Date time picker</h3>
+    </div>
+    <div class="panel-body">
+      <input
+        class="form-control"
+        type="text"
+        mwlFlatpickr
+        [(ngModel)]="dateTimeValue"
+        [altInput]="true"
+        [convertModelValue]="true"
+        [enableTime]="true"
+        dateFormat="Y-m-dTH:i"
+        >
+      NgModel value: {{ dateTimeValue }}
+    </div>
+  </div>
